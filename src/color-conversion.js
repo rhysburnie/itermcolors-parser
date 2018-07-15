@@ -47,7 +47,7 @@ export const rgbaStandardToFloat = rgba => {
     r / 255,
     g / 255,
     b / 255,
-   (isNaN(a)) ? 1 : a
+   isNaN(a) ? 1 : a
   ];
 }
 
