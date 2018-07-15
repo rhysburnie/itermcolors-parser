@@ -1,0 +1,27 @@
+{
+  "name": "itermcolors-parser",
+  "version": "0.0.0",
+  "description": "Parse .itermcolors plist into js with tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "author": "Rhys Burnie",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "dependencies": {
+    "plist": "^3.0.1"
+  }
+}
