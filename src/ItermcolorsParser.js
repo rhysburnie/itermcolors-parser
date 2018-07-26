@@ -2,8 +2,7 @@ import fs from 'fs';
 import parser from 'plist';
 import {
   itermToRGBA,
-  rgbaToIterm,
-  rgbaToHex8
+  rgbaToIterm
 } from './color-conversion';
 
 export default class ItermcolorsParser {

@@ -2,10 +2,7 @@
   "name": "itermcolors-parser",
   "version": "0.0.0",
   "description": "Parse .itermcolors plist into js with tools",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava"
-  },
+  "main": "lib/index.js",
   "ava": {
     "require": [
       "babel-register"
@@ -23,5 +20,11 @@
   },
   "dependencies": {
     "plist": "^3.0.1"
+  },
+  "scripts": {
+    "test": "ava",
+    "build": "npm run build:babel",
+    "build:babel": "babel --ignore=**/*.test.js src -d lib --source-maps",
+    "prepare": "npm run build"
   }
 }
